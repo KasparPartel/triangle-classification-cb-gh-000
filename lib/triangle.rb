@@ -10,7 +10,8 @@ class Triangle
   def kind
     if @first_side == @second_side && @first_side == @third_side
       :equilateral
-    elsif @first_side != @second_side && @second_side == @third_side
+    elsif @first_side != @second_side && @second_side == @third_side ||
+      @first_side == @third_side && @first_side != @second_side 
       :isosceles
     end
   end

@@ -18,11 +18,11 @@ class Triangle
       @first_side != @third_side
       :scalene
     else
-      raise TriangleError
+      raise RangeError
     end
   end
 
-  class TriangleError < StandardError
+  class RangeError < StandardError
     def message
       "your triangles sides must be over 0"
     end

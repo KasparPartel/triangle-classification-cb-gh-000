@@ -18,7 +18,11 @@ class Triangle
       @first_side != @third_side
       :scalene
     else
-      raise RangeError
+      begin
+        raise RangeError
+      rescue RangeError => error
+        puts error.message
+      end
     end
   end
 

@@ -14,6 +14,9 @@ class Triangle
       @first_side == @third_side && @first_side != @second_side ||
       @first_side == @second_side && @first_side != @third_side 
       :isosceles
+    elsif @first_side != @second_side && @second_side != @third_side && 
+      @first_side != @third_side
+      
     end
   end
 end

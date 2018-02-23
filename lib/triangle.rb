@@ -20,7 +20,7 @@ class Triangle
       @first_side != @third_side
       :scalene
     else
-      
+
     end
   end
 end

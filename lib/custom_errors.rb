@@ -1,0 +1,3 @@
+class TriangleError < StandardError
+
+end

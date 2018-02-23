@@ -19,14 +19,14 @@ class Triangle
       :scalene
     else
       begin
-        raise RangeError
-      rescue RangeError => error
+        raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     end
   end
 
-  class RangeError < StandardError
+  class TriangleError < StandardError
     def message
       "your triangles sides must be over 0"
     end

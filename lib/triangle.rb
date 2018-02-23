@@ -23,6 +23,8 @@ class Triangle
   end
 
   class TriangleError < StandardError
-
+    def message
+      "your triangles sides must be over 0"
+    end
   end
 end

@@ -1,3 +1,0 @@
-class TriangleError < StandardError
-
-end

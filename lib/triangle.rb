@@ -18,10 +18,10 @@ class Triangle
       @first_side != @third_side
       :scalene
     else
-
+      raise TriangleError
     end
   end
-  
+
   class TriangleError < StandardError
 
   end

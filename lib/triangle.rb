@@ -17,7 +17,7 @@ class Triangle
     elsif @first_side != @second_side && @second_side != @third_side &&
       @first_side != @third_side
       :scalene
-    else
+    elsif @first_side == 0 || @second_side == 0 || @third_side == 0
       begin
         raise TriangleError
       rescue TriangleError => error

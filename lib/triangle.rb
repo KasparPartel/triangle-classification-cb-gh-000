@@ -9,5 +9,6 @@ class Triangle
 
   def kind
     :equilateral if @first_side == @second_side && @first_side == @third_side 
+    :isosceles if @second_side == @third_side
   end
 end

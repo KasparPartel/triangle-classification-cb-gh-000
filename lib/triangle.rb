@@ -1,3 +1,5 @@
+require_relative "./custom_errors.rb"
+
 class Triangle
   attr_reader :first_side, :second_side, :third_side
   # write code here

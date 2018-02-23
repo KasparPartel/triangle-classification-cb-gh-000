@@ -17,6 +17,8 @@ class Triangle
     elsif @first_side != @second_side && @second_side != @third_side &&
       @first_side != @third_side
       :scalene
+    else
+      
     end
   end
 end
